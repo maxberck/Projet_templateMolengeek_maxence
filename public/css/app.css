@@ -54,6 +54,19 @@ nav #navbar li a {
 .featured h3 span, .featured .h3 span {
   color: #156EEA;
 }
+.featured .s1-card {
+  padding-left: 7%;
+  justify-content: space-between;
+}
+.featured .s1-card div {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.featured .s1-card div img {
+  width: 20%;
+}
+.featured .s1-card div p {
+  font-size: 0.7em;
+}
 
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
@@ -4355,7 +4368,7 @@ textarea.form-control-lg {
   --bs-card-border-width: var(--bs-border-width);
   --bs-card-border-color: var(--bs-border-color-translucent);
   --bs-card-border-radius: var(--bs-border-radius);
-  --bs-card-box-shadow: ;
+  --bs-card-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
   --bs-card-cap-padding-y: 0.5rem;
   --bs-card-cap-padding-x: 1rem;
