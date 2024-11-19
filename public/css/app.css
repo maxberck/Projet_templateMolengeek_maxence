@@ -6,9 +6,21 @@ header {
   background-repeat: no-repeat;
   height: 35em;
 }
-header div {
+header .filter {
   background-color: rgba(255, 255, 255, 0.552);
   height: 35em;
+  align-items: center;
+}
+header .filter div {
+  padding-left: 15%;
+}
+header .filter div h1 span, header .filter div .h1 span {
+  color: #156EEA;
+}
+header .filter div a {
+  background-color: #156EEA;
+  font-size: 0.7em;
+  width: 10%;
 }
 
 nav {
