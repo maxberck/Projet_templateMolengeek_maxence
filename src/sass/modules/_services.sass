@@ -31,4 +31,18 @@
                     width: 40%               
             p
                 font-size: .7em
-        
+
+@media (max-width: 768px) 
+    .services
+        .services-card
+            .card-body
+                width: calc( 50% - 1rem )
+
+@media (max-width: 425px) 
+    .services
+        div
+            p
+                font-size: .5em
+        .services-card
+            .card-body
+                width: calc( 100% - 1rem )      
