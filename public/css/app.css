@@ -69,21 +69,24 @@ nav #navbar li a {
 }
 
 .s2 div .carousel-inner {
-  height: 25em;
+  height: 23.5em;
 }
 .s2 div .carousel-inner .carousel-item {
-  object-fit: contain;
   filter: brightness(0.3);
-  overflow: hidden;
-  object-fit: cover;
-  background-repeat: repeat;
+}
+.s2 div .carousel-inner .carousel-item #image {
+  width: 67%;
+  transform: translateY(-10%);
+}
+.s2 div .carousel-inner .carousel-item #image2 {
+  transform: translateY(-10%);
 }
 .s2 div .carousel-inner .carousel-caption {
-  bottom: 7em;
+  bottom: 6em;
 }
 .s2 div .carousel-inner .carousel-caption h2, .s2 div .carousel-inner .carousel-caption .h2 {
   color: #156EEA;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
 }
 
 .services div a {
@@ -122,6 +125,41 @@ nav #navbar li a {
 }
 .services .services-card .card-body p {
   font-size: 0.7em;
+}
+
+.profile {
+  background-color: #F6F9FE;
+}
+.profile div a {
+  background-color: #E7F1FD;
+  border: none;
+  color: #156EEA;
+  font-size: 0.7em;
+}
+.profile div h3, .profile div .h3 {
+  color: #222222;
+  font-weight: 600;
+}
+.profile div h3 span, .profile div .h3 span {
+  color: #156EEA;
+}
+.profile .profile-card {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.profile .profile-card div {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.profile .profile-card div .card-body {
+  height: 6em;
+}
+.profile .profile-card div .card-body h5, .profile .profile-card div .card-body .h5 {
+  font-size: 0.8em;
+  color: #222222;
+}
+.profile .profile-card div .card-body p {
+  font-size: 0.7em;
+  color: #C0C0C0;
 }
 
 /*!
