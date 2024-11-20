@@ -162,6 +162,45 @@ nav #navbar li a {
   color: #C0C0C0;
 }
 
+.contact div a {
+  background-color: #E7F1FD;
+  border: none;
+  color: #156EEA;
+  font-size: 0.7em;
+}
+.contact div h3, .contact div .h3 {
+  color: #222222;
+  font-weight: 600;
+}
+.contact div h3 span, .contact div .h3 span {
+  color: #156EEA;
+}
+.contact .contact_case {
+  padding-right: 3em;
+  width: 63%;
+  gap: 1em;
+  align-items: center;
+}
+.contact .contact_case .box {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.contact .contact_case .box .logo {
+  border: 2px #B3D1FA dotted;
+  border-radius: 100%;
+  width: 3em;
+  height: 3em;
+}
+.contact .contact_case .box .logo img {
+  height: 1.5em;
+}
+.contact .contact_case .box h5, .contact .contact_case .box .h5 {
+  color: #757575;
+}
+.contact .contact_case .box p {
+  color: #757575;
+  font-size: 0.7em;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
