@@ -76,6 +76,7 @@ nav #navbar li a {
   filter: brightness(0.3);
   overflow: hidden;
   object-fit: cover;
+  background-repeat: repeat;
 }
 .s2 div .carousel-inner .carousel-caption {
   bottom: 7em;
