@@ -3,10 +3,10 @@ header
     background-position-x: 80%
     background-size: 100%
     background-repeat: no-repeat
-    height: 35em
+    height: 35rem
     .filter
         background-color: rgba(255, 255, 255, 0.552)
-        height: 35em
+        height: 35rem
         align-items: center
         div
             padding-left: 15%
@@ -17,6 +17,42 @@ header
                 background-color: $blue
                 font-size: .7em
                 width: 10%
+
+@media (max-width: 1024px) 
+    header
+        height: 25rem
+        .filter
+            height: 25rem
+            div
+                a
+                    width: 15%
+
+@media (max-width: 768px) 
+    header
+        height: 20rem
+        .filter
+            height: 20rem
+            div
+                a
+                    width: 18%
+
+@media (max-width: 425px) 
+    header
+        height: 15rem
+        .filter
+            height: 10rem
+            div
+                a
+                    width: 40%
+
+@media (max-width: 375px) 
+    header
+        height: 10rem
+        .filter
+            height: 9rem
+            div
+                a
+                    width: 40%
         
             
 

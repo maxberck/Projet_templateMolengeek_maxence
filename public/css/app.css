@@ -4,11 +4,11 @@ header {
   background-position-x: 80%;
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 35em;
+  height: 35rem;
 }
 header .filter {
   background-color: rgba(255, 255, 255, 0.552);
-  height: 35em;
+  height: 35rem;
   align-items: center;
 }
 header .filter div {
@@ -23,6 +23,50 @@ header .filter div a {
   width: 10%;
 }
 
+@media (max-width: 1024px) {
+  header {
+    height: 25rem;
+  }
+  header .filter {
+    height: 25rem;
+  }
+  header .filter div a {
+    width: 15%;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 20rem;
+  }
+  header .filter {
+    height: 20rem;
+  }
+  header .filter div a {
+    width: 18%;
+  }
+}
+@media (max-width: 425px) {
+  header {
+    height: 15rem;
+  }
+  header .filter {
+    height: 10rem;
+  }
+  header .filter div a {
+    width: 40%;
+  }
+}
+@media (max-width: 375px) {
+  header {
+    height: 10rem;
+  }
+  header .filter {
+    height: 9rem;
+  }
+  header .filter div a {
+    width: 40%;
+  }
+}
 nav {
   align-items: center;
   justify-content: space-evenly;
@@ -71,6 +115,19 @@ nav #navbar li a {
   font-size: 0.7em;
 }
 
+@media (max-width: 768px) {
+  .featured .s1-card {
+    flex-wrap: wrap;
+  }
+  .featured .s1-card div #img-card {
+    height: 50%;
+  }
+}
+@media (max-width: 425px) {
+  .featured .s1-card div #img-card {
+    height: 30%;
+  }
+}
 .s2 div .carousel-inner {
   height: 23.5em;
 }
@@ -95,6 +152,16 @@ nav #navbar li a {
   font-size: 0.62em;
 }
 
+@media (max-width: 425px) {
+  .s2 div .carousel-inner .carousel-caption {
+    bottom: 4em;
+  }
+}
+@media (max-width: 375px) {
+  .s2 div .carousel-inner .carousel-caption {
+    bottom: 3em;
+  }
+}
 .services div a {
   background-color: #E7F1FD;
   border: none;
@@ -135,6 +202,19 @@ nav #navbar li a {
   font-size: 0.7em;
 }
 
+@media (max-width: 768px) {
+  .services .services-card .card-body {
+    width: calc(50% - 1rem);
+  }
+}
+@media (max-width: 425px) {
+  .services div p {
+    font-size: 0.5em;
+  }
+  .services .services-card .card-body {
+    width: calc(100% - 1rem);
+  }
+}
 .profile {
   background-color: #F6F9FE;
 }
@@ -173,6 +253,15 @@ nav #navbar li a {
   color: #C0C0C0;
 }
 
+@media (max-width: 425px) {
+  .profile div p {
+    font-size: 0.5em;
+  }
+  .profile .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .contact div a {
   background-color: #E7F1FD;
   border: none;
@@ -242,6 +331,76 @@ nav #navbar li a {
   width: 40%;
 }
 
+@media (max-width: 1024px) {
+  .contact div iframe {
+    width: 290.13px;
+  }
+  .contact .contact_box .box-formulaire button {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .contact .contact_case .box {
+    height: 129.61px;
+  }
+  .contact div iframe {
+    width: 211.91px;
+  }
+  .contact .contact_box .box-formulaire button {
+    width: 70%;
+  }
+}
+@media (max-width: 425px) {
+  .contact div p {
+    font-size: 0.5em;
+  }
+  .contact .contact_case {
+    width: 80%;
+  }
+  .contact .contact_case .box {
+    height: 129.61px;
+  }
+  .contact .contact_case .box h5, .contact .contact_case .box .h5 {
+    font-size: 1em;
+  }
+  .contact .contact_case .box p {
+    color: #757575;
+    font-size: 0.5em;
+  }
+  .contact div iframe {
+    width: 140px;
+  }
+  .contact .contact_box {
+    width: 80%;
+  }
+  .contact .contact_box .box-formulaire {
+    padding: 0.5em;
+  }
+  .contact .contact_box .box-formulaire textarea {
+    height: 5em;
+  }
+  .contact .contact_box .box-formulaire button {
+    width: 90%;
+  }
+}
+@media (max-width: 375px) {
+  .contact div p {
+    font-size: 0.5em;
+  }
+  .contact .contact_case {
+    width: 90%;
+  }
+  .contact div iframe {
+    width: 138.75px;
+  }
+  .contact .contact_box {
+    width: 90%;
+  }
+  .contact .contact_box .box-formulaire button {
+    width: 90%;
+    font-size: 0.6em;
+  }
+}
 footer {
   background-color: #f1f6fe;
   align-items: center;
@@ -259,6 +418,11 @@ footer .container p span {
   color: #156EEA;
 }
 
+@media (max-width: 425px) {
+  footer .container p {
+    font-size: 0.3em;
+  }
+}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
