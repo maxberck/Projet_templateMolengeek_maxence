@@ -70,11 +70,12 @@ nav #navbar li a {
 
 .s2 div .carousel-inner {
   height: 25em;
-  overflow: auto;
 }
 .s2 div .carousel-inner .carousel-item {
   object-fit: contain;
   filter: brightness(0.3);
+  overflow: hidden;
+  object-fit: cover;
 }
 .s2 div .carousel-inner .carousel-caption {
   bottom: 7em;
@@ -82,6 +83,44 @@ nav #navbar li a {
 .s2 div .carousel-inner .carousel-caption h2, .s2 div .carousel-inner .carousel-caption .h2 {
   color: #156EEA;
   padding-bottom: 1em;
+}
+
+.services div a {
+  background-color: #E7F1FD;
+  border: none;
+  color: #156EEA;
+  font-size: 0.7em;
+}
+.services div h3, .services div .h3 {
+  color: #222222;
+  font-weight: 600;
+}
+.services div h3 span, .services div .h3 span {
+  color: #156EEA;
+}
+.services .services-card {
+  padding-left: 7%;
+  padding-right: 7%;
+  flex-wrap: wrap;
+}
+.services .services-card .card-body {
+  border: 1px solid #DFEBFD;
+  width: calc(33.333% - 1rem);
+  height: 15em;
+}
+.services .services-card .card-body div {
+  height: 2.7em;
+  width: 2.7em;
+  background-color: #F1F6FE;
+  border-block-end-color: #DFEBFD;
+  border-block-start-color: #DFEBFD;
+  border-bottom-color: #DFEBFD;
+}
+.services .services-card .card-body .alert {
+  --bs-alert-padding-x:.7em;
+}
+.services .services-card .card-body p {
+  font-size: 0.7em;
 }
 
 /*!
