@@ -99,33 +99,27 @@ nav #navbar li a {
   color: #156EEA;
 }
 .featured .s1-card {
-  padding-left: 7%;
-  padding-right: 7%;
+  width: 63%;
 }
-.featured .s1-card div {
+.featured .s1-card div div {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
-.featured .s1-card div img {
+.featured .s1-card div div img {
   width: 19%;
 }
-.featured .s1-card div #img-card {
+.featured .s1-card div div #img-card {
   height: 19%;
 }
-.featured .s1-card div p {
+.featured .s1-card div div p {
   font-size: 0.7em;
 }
 
 @media (max-width: 768px) {
   .featured .s1-card {
-    flex-wrap: wrap;
+    justify-content: center;
   }
-  .featured .s1-card div #img-card {
-    height: 50%;
-  }
-}
-@media (max-width: 425px) {
-  .featured .s1-card div #img-card {
-    height: 30%;
+  .featured .s1-card .card-1 {
+    align-items: flex-end;
   }
 }
 .s2 div .carousel-inner {
@@ -178,8 +172,7 @@ nav #navbar li a {
   font-size: 0.8em;
 }
 .services .services-card {
-  padding-left: 7%;
-  padding-right: 7%;
+  width: 63%;
   flex-wrap: wrap;
 }
 .services .services-card .card-body {
@@ -236,8 +229,7 @@ nav #navbar li a {
   font-size: 0.8em;
 }
 .profile .profile-card {
-  padding-left: 7%;
-  padding-right: 7%;
+  width: 63%;
 }
 .profile .profile-card .card {
   box-shadow: 0 4px 8px rgba(143, 205, 219, 0.1);
@@ -289,7 +281,7 @@ nav #navbar li a {
   font-size: 0.8em;
 }
 .contact .contact_case {
-  padding-right: 3em;
+  padding-right: 3rem;
   width: 63%;
   gap: 1em;
   align-items: center;
@@ -346,16 +338,13 @@ nav #navbar li a {
 
 @media (max-width: 1024px) {
   .contact div iframe {
-    width: 290.13px;
+    width: 292.56px;
   }
   .contact .contact_box .box-formulaire .lien_bonus {
     width: 50%;
   }
 }
 @media (max-width: 768px) {
-  .contact .contact_case .box {
-    height: 129.61px;
-  }
   .contact div iframe {
     width: 211.91px;
   }
@@ -368,21 +357,21 @@ nav #navbar li a {
     font-size: 0.5em;
   }
   .contact .contact_case {
+    flex-wrap: wrap;
+    align-items: center;
     width: 80%;
   }
-  .contact .contact_case .box {
-    height: 129.61px;
-  }
-  .contact .contact_case .box h5, .contact .contact_case .box .h5 {
+  .contact .contact_case div .box h5, .contact .contact_case div .box .h5 {
     font-size: 1em;
   }
-  .contact .contact_case .box p {
+  .contact .contact_case div .box p {
     font-size: 0.5em;
   }
   .contact div iframe {
-    width: 140px;
+    width: 307.2px;
   }
   .contact .contact_box {
+    flex-direction: column;
     width: 80%;
   }
   .contact .contact_box .box-formulaire {
@@ -399,14 +388,8 @@ nav #navbar li a {
   .contact div p {
     font-size: 0.5em;
   }
-  .contact .contact_case {
-    width: 90%;
-  }
   .contact div iframe {
-    width: 138.75px;
-  }
-  .contact .contact_box {
-    width: 90%;
+    width: 267.2px;
   }
   .contact .contact_box .box-formulaire .lien_bonus {
     width: 90%;

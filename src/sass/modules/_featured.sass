@@ -11,28 +11,22 @@
         span
             color: $blue
     .s1-card    // utilisé pour centrer à la taille voulu mes cartes
-        padding-left: 7%  
-        padding-right: 7%
+        width: 63%
         div
-            box-shadow: $card-box-shadow // mettre un box-shadow avec une variable pré définie
-            img
-                width: 19%
-            #img-card
-                height: 19% // une des svg était plus grande que les autres. donc j'ai fait un id pour la modifier séparément
-            p
-                font-size: .7em
+            div
+                box-shadow: $card-box-shadow // mettre un box-shadow avec une variable pré définie
+                img
+                    width: 19%
+                #img-card
+                    height: 19% // une des svg était plus grande que les autres. donc j'ai fait un id pour la modifier séparément
+                p
+                    font-size: .7em
 
 @media (max-width: 768px) 
     .featured
         .s1-card
-            flex-wrap: wrap // mettre en flex-wrap pour que les image soit les une au-dessus des autres
-            div
-                #img-card
-                    height: 50% // modification de la taille de l'svg 
+            justify-content: center
+            .card-1
+                align-items: flex-end
                
-@media (max-width: 425px) 
-    .featured
-        .s1-card
-            div
-                #img-card
-                    height: 30%
+
