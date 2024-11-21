@@ -30,20 +30,27 @@
             </li>
           </ul>
     </nav>
-    <header class="w-100">
+    <!-- header -->
+     <!-- donner une largeur de 100% au header -->
+    <header class="w-100"> 
+        <!-- mettre le texte en display flex et création de la classe filter pour l'image du header -->
         <div class="filter d-flex">
             <div class="card-body container">
                 <h1 class="card-title ">Welcome to <span>MolenGeek</span></h1>
+                <!-- utilisé la classe lead pour mettre le texte en avant (gras) -->
                 <p class="card-text lead">Mon projet du vendredi</p>
                 <a href="#" class="btn btn-primary rounded-1"><strong>GET STARTED</strong></a>
               </div>
         </div>
     </header>
+    <!-- section featured -->
     <section class="featured">
         <div class="container text-center">
+            <!-- rounded-5 met du border radius -->
             <a href="#" class="btn btn-primary rounded-5 mb-2"><strong>FEATURED SERVICES</strong></a>
             <h4 class="card-title">Read <span>Featured Services</span></h4>
         </div>
+        <!-- création de la classe s1-card pour la travaillé dans sass -->
         <div class="container w-75 d-flex s1-card pt-5 gap-3">
             <!-- Card 1 -->
             <div class="card-body p-4 ">
@@ -71,11 +78,13 @@
             </div>
         </div>
     </section>
+    <!-- la carousel -->
     <section class="s2 pt-5 pb-5">
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <!-- image carousel -->
               <div class="carousel-item active d-flex ">
+                <!-- mettre deux image  car on voit sur le screen d'énoncé que l'image se répète -->
                 <img src="./public/img/testi.jpg" id="image" alt="...">
                 <img src="./public/img/testi.jpg" id="image2" alt="">
               </div>
@@ -87,15 +96,18 @@
             </div>
             <!-- les boutons de la carousel -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <!-- modifier la flèche dans bootsrtap/scss/_variables.scss -->
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <!-- modifier la flèche dans bootsrtap/scss/_variables.scss -->
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
     </section>
+    <!-- service -->
     <section class="services pb-5">
         <div class="container w-50 text-center">
             <a href="#" class="btn btn-primary rounded-5 mb-2"><strong>FEATURED SERVICES</strong></a>
@@ -104,49 +116,54 @@
         </div>
         <!-- alert -->
         <div class="services-card container w-75 d-flex flex-wrap justify-content-between pt-5 gap-3 ">
-            <!-- Service 1 -->
+            <!-- service 1 -->
             <div class="card-body text-center p-4 d-flex flex-column align-items-center pt-5">
+                <!-- div pour encadrer le svg -->
               <div class=" d-flex justify-content-center mx-auto">
                 <img src="./public/img/basketball-solid.svg" alt="icon" class="img-fluid">
               </div>
               <h5 class="card-title pt-3 pb-3 fs-6 fw-bold">Lorem Ipsum</h5>
               <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
             </div>
-            <!-- alert 2 -->
+            <!-- service 2 -->
             <div class="card-body text-center p-4 d-flex flex-column align-items-center pt-5">
-                <div class=" d-flex justify-content-center align-items-center mx-auto">
+                <div class=" d-flex justify-content-center mx-auto">
                     <img src="./public/img/file-lines-regular.svg" alt="icon" class="img-fluid">
                 </div>
                 <h5 class="card-title pt-3 pb-3 fs-6 fw-bold">Lorem Ipsum</h5>
                 <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
             </div>
-            <!-- alert 3 -->
+            <!-- service 3 -->
             <div class="card-body text-center p-4 d-flex flex-column align-items-center pt-5">
-                <div class=" d-flex justify-content-center align-items-center mx-auto">
+                <!-- div pour encadrer le svg -->
+                <div class=" d-flex justify-content-center mx-auto">
                     <img src="./public/img/gauge-simple-high-solid.svg" alt="icon" class="img-fluid">
                 </div>
                 <h5 class="card-title pt-3 pb-3 fs-6 fw-bold">Lorem Ipsum</h5>
                 <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
             </div>
-            <!-- alert 4 -->
+            <!-- service 4 -->
             <div class="card-body text-center p-4 d-flex flex-column align-items-center pt-5">
-                <div class=" d-flex justify-content-center align-items-center mx-auto">
+                <!-- div pour encadrer le svg -->
+                <div class=" d-flex justify-content-center mx-auto">
                     <img src="./public/img/earth-americas-solid.svg" alt="icon" class="img-fluid">
                 </div>
                 <h5 class="card-title pt-3 pb-3 fs-6 fw-bold">Lorem Ipsum</h5>
                 <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
               </div>
-            <!-- alert 5 -->
+            <!-- service 5 -->
             <div class="card-body text-center p-4 d-flex flex-column align-items-center pt-5">
-                <div class=" d-flex justify-content-center align-items-center mx-auto">
+                <!-- div pour encadrer le svg -->
+                <div class=" d-flex justify-content-center mx-auto">
                     <img src="./public/img/tv-solid.svg" alt="icon" class="img-fluid">
                 </div>
                 <h5 class="card-title pt-3 pb-3 fs-6 fw-bold">Lorem Ipsum</h5>
                 <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
             </div>
-            <!-- alert 6 -->
+            <!-- service 6 -->
             <div class="card-body text-center p-4 d-flex flex-column align-items-center pt-5">
-                <div class=" d-flex justify-content-center align-items-center mx-auto">
+                <!-- div pour encadrer le svg -->
+                <div class=" d-flex justify-content-center  mx-auto">
                     <img src="./public/img/archway-solid.svg" alt="icon" class="img-fluid">
                 </div>
                 <h5 class="card-title pt-3 pb-3 fs-6 fw-bold">Lorem Ipsum</h5>
@@ -154,7 +171,9 @@
             </div>             
         </div>
     </section>
+    <!-- profile -->
     <section class="profile">
+        <!-- container avec une width de 50 -->
         <div class="container w-50 text-center pt-5 pb-2">
             <a href="#" class="btn btn-primary rounded-5 mb-2"><strong>TEAM</strong></a>
             <h4 class="card-title">Our Hardworking<span> Team</span></h4>
@@ -162,6 +181,7 @@
         </div>
         <div class="container w-75 d-flex gap-3 profile-card pb-5">
             <!-- ptofile 1 -->
+             <!-- dans style ca va donner une taille précise à la carte -->
             <div class="card" style="width: 13rem;">
                 <img src="./public/img/team/team-1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -195,6 +215,7 @@
               </div>
         </div>
     </section>
+    <!-- contact -->
     <section class="contact pb-5">
         <div class="container w-50 text-center pt-5 pb-2">
             <a href="#" class="btn btn-primary rounded-5 mb-2"><strong>Contact</strong></a>
@@ -203,6 +224,7 @@
         </div>
         <!-- case 1ere ligne -->
         <div class="contact_case container d-flex justify-content-around">
+            <!-- col permet de donné un width par rapport à 12 qui est 100% ici 50% -->
             <div class="col-6 text-center box d-flex align-items-center flex-column">
                 <div class="logo d-flex align-items-center justify-content-center">
                     <img src="./public/img/location-dot-solid.svg" alt="">
@@ -225,7 +247,7 @@
                 <p>+32 476096872</p>
             </div>
         </div>
-        
+        <!-- deuxième ligne -->
         <div class="contact_box container d-flex justify-content-center">
             <div class="col-6 box">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5037.387110351745!2d4.3386397121929825!3d50.85535875800903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38c275028d3%3A0xc7799151146ebf77!2sMolenGeek!5e0!3m2!1sfr!2sbe!4v1732112167625!5m2!1sfr!2sbe" width="423.59" height="288" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

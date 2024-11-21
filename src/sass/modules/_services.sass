@@ -1,4 +1,5 @@
 .services
+    // la même chose  que dans _featured.sass
     div
         a
             background-color: #E7F1FD
@@ -18,8 +19,8 @@
         padding-right: 7%   
         flex-wrap: wrap    
         .card-body
-            border: 1px solid #DFEBFD
-            width: calc(33.333% - 1rem)
+            border: 1px solid #DFEBFD      // crée la border autour de chaque carte
+            width: calc(33.333% - 1rem)     // dit que chaque carte prend 33.333% de l'espace disponible - 1rem qui permet de crée de l'espace 
             height: 15em
             div
                 height: 2.7em
@@ -28,7 +29,7 @@
                 border: solid 1px #DFEBFD
                 border-radius: 5px
                 img
-                    width: 40%               
+                    width: 40%      // donne le % d'espace vouluq ue prendra l'image dans la dive      
             p
                 font-size: .7em
 
@@ -36,7 +37,7 @@
     .services
         .services-card
             .card-body
-                width: calc( 50% - 1rem )
+                width: calc( 50% - 1rem ) // au lieu de 3 par ligne on passe à 2 par ligne
 
 @media (max-width: 425px) 
     .services
@@ -45,4 +46,4 @@
                 font-size: .5em
         .services-card
             .card-body
-                width: calc( 100% - 1rem )      
+                width: calc( 100% - 1rem )      // maintenant 1 par ligne 

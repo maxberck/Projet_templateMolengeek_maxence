@@ -1,15 +1,15 @@
 header
-    background-image: url("../img/hero-bg.jpg")
-    background-position-x: 80%
-    background-size: 100%
+    background-image: url("../img/hero-bg.jpg") //importer l'image de fond du header
+    background-position-x: 80% // centrer l'image grâce à l'axe X
+    background-size: 100% // spécifier que je veux que mon image prenne toute la taille
     background-repeat: no-repeat
     height: 35rem
     .filter
-        background-color: rgba(255, 255, 255, 0.552)
+        background-color: rgba(255, 255, 255, 0.552) //un background-color qui fait effet de filtre sur le bg-image gräce à l'opacitée
         height: 35rem
         align-items: center
         div
-            padding-left: 15%
+            padding-left: 15% //positioner le texte sur l'image ou je veux 
             h1
                 span
                     color: $blue
@@ -20,12 +20,12 @@ header
 
 @media (max-width: 1024px) 
     header
-        height: 25rem
+        height: 25rem // redimensionner l'image
         .filter
-            height: 25rem
+            height: 25rem 25rem // redimensionner le bg-c
             div
                 a
-                    width: 15%
+                    width: 15% // redimensionner le bouton
 
 @media (max-width: 768px) 
     header
