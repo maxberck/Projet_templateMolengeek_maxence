@@ -214,6 +214,44 @@ nav #navbar li a {
     width: calc(100% - 1rem);
   }
 }
+.profile {
+  background-color: #F6F9FE;
+}
+.profile div a {
+  background-color: #E7F1FD;
+  border: none;
+  color: #156EEA;
+  font-size: 0.7em;
+}
+.profile div h4, .profile div .h4 {
+  color: #222222;
+  font-weight: 600;
+}
+.profile div h4 span, .profile div .h4 span {
+  color: #156EEA;
+}
+.profile div p {
+  font-size: 0.8em;
+}
+.profile .profile-card {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.profile .profile-card div {
+  box-shadow: 0 4px 8px rgba(143, 205, 219, 0.1);
+}
+.profile .profile-card div .card-body {
+  height: 6em;
+}
+.profile .profile-card div .card-body h5, .profile .profile-card div .card-body .h5 {
+  font-size: 0.8em;
+  color: #222222;
+}
+.profile .profile-card div .card-body p {
+  font-size: 0.7em;
+  color: #C0C0C0;
+}
+
 @media (max-width: 425px) {
   .profile div p {
     font-size: 0.5em;
@@ -223,6 +261,75 @@ nav #navbar li a {
     align-items: center;
   }
 }
+.contact div a {
+  background-color: #E7F1FD;
+  border: none;
+  color: #156EEA;
+  font-size: 0.7em;
+}
+.contact div h4, .contact div .h4 {
+  color: #222222;
+  font-weight: 600;
+}
+.contact div h4 span, .contact div .h4 span {
+  color: #156EEA;
+}
+.contact div p {
+  font-size: 0.8em;
+}
+.contact .contact_case {
+  padding-right: 3em;
+  width: 63%;
+  gap: 1em;
+  align-items: center;
+}
+.contact .contact_case .box {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.contact .contact_case .box .logo {
+  border: 2px #B3D1FA dotted;
+  border-radius: 100%;
+  width: 3em;
+  height: 3em;
+}
+.contact .contact_case .box .logo img {
+  height: 1.5em;
+}
+.contact .contact_case .box h5, .contact .contact_case .box .h5 {
+  color: #757575;
+}
+.contact .contact_case .box p {
+  color: #757575;
+  font-size: 0.7em;
+}
+.contact .contact_box {
+  width: 63%;
+  gap: 0.4em;
+  align-items: center;
+  padding-right: 1.3em;
+  padding-top: 1em;
+}
+.contact .contact_box .box-formulaire {
+  padding: 1em;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  height: 18em;
+}
+.contact .contact_box .box-formulaire input {
+  font-size: 0.7em;
+  color: #A0A7AC;
+}
+.contact .contact_box .box-formulaire textarea {
+  width: 100%;
+  height: 7rem;
+  font-size: 0.7em;
+  color: #A0A7AC;
+}
+.contact .contact_box .box-formulaire button {
+  font-size: 0.8em;
+  height: 2.5rem;
+  width: 40%;
+}
+
 @media (max-width: 1024px) {
   .contact div iframe {
     width: 290.13px;
