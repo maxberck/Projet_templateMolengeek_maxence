@@ -89,7 +89,7 @@ nav #navbar li a {
   background-color: #E7F1FD;
   border: none;
   color: #156EEA;
-  font-size: 0.7em;
+  font-size: 0.6em;
 }
 .featured h4, .featured .h4 {
   color: #222222;
@@ -165,7 +165,7 @@ nav #navbar li a {
   background-color: #E7F1FD;
   border: none;
   color: #156EEA;
-  font-size: 0.7em;
+  font-size: 0.6em;
 }
 .services div h4, .services div .h4 {
   color: #222222;
@@ -221,7 +221,9 @@ nav #navbar li a {
   background-color: #E7F1FD;
   border: none;
   color: #156EEA;
-  font-size: 0.7em;
+  font-size: 0.6em;
+  height: 1.5rem;
+  width: 4rem;
 }
 .profile div h4, .profile div .h4 {
   color: #222222;
@@ -237,19 +239,27 @@ nav #navbar li a {
   padding-left: 7%;
   padding-right: 7%;
 }
-.profile .profile-card div {
+.profile .profile-card .card {
   box-shadow: 0 4px 8px rgba(143, 205, 219, 0.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
-.profile .profile-card div .card-body {
+.profile .profile-card .card:hover {
+  filter: none;
+}
+.profile .profile-card .card .card-body {
   height: 6em;
 }
-.profile .profile-card div .card-body h5, .profile .profile-card div .card-body .h5 {
+.profile .profile-card .card .card-body h5, .profile .profile-card .card .card-body .h5 {
   font-size: 0.8em;
   color: #222222;
 }
-.profile .profile-card div .card-body p {
+.profile .profile-card .card .card-body p {
   font-size: 0.7em;
   color: #C0C0C0;
+}
+.profile .profile-card:hover .card:not(:hover) {
+  transform: scale(0.9);
+  filter: blur(3px);
 }
 
 @media (max-width: 425px) {
@@ -265,7 +275,8 @@ nav #navbar li a {
   background-color: #E7F1FD;
   border: none;
   color: #156EEA;
-  font-size: 0.7em;
+  font-size: 0.6em;
+  width: 5rem;
 }
 .contact div h4, .contact div .h4 {
   color: #222222;
@@ -324,17 +335,20 @@ nav #navbar li a {
   font-size: 0.7em;
   color: #A0A7AC;
 }
-.contact .contact_box .box-formulaire button {
+.contact .contact_box .box-formulaire .lien_bonus {
   font-size: 0.8em;
   height: 2.5rem;
   width: 40%;
+  background-color: #156EEA;
+  color: #fff;
+  padding-top: 0.6rem;
 }
 
 @media (max-width: 1024px) {
   .contact div iframe {
     width: 290.13px;
   }
-  .contact .contact_box .box-formulaire button {
+  .contact .contact_box .box-formulaire .lien_bonus {
     width: 50%;
   }
 }
@@ -345,7 +359,7 @@ nav #navbar li a {
   .contact div iframe {
     width: 211.91px;
   }
-  .contact .contact_box .box-formulaire button {
+  .contact .contact_box .box-formulaire .lien_bonus {
     width: 70%;
   }
 }
@@ -377,7 +391,7 @@ nav #navbar li a {
   .contact .contact_box .box-formulaire textarea {
     height: 5em;
   }
-  .contact .contact_box .box-formulaire button {
+  .contact .contact_box .box-formulaire .lien_bonus {
     width: 90%;
   }
 }
@@ -394,9 +408,10 @@ nav #navbar li a {
   .contact .contact_box {
     width: 90%;
   }
-  .contact .contact_box .box-formulaire button {
+  .contact .contact_box .box-formulaire .lien_bonus {
     width: 90%;
-    font-size: 0.6em;
+    font-size: 0.7rem;
+    padding-top: 0.7rem;
   }
 }
 footer {
@@ -421,6 +436,49 @@ footer .container p span {
     font-size: 0.3em;
   }
 }
+.body_bonus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.body_bonus h1, .body_bonus .h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  padding: 3rem;
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  color: transparent;
+}
+.body_bonus .bonus_vid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.body_bonus .bonus_vid video {
+  width: 80%;
+  border-radius: 1rem;
+}
+.body_bonus .footer_bonus {
+  background-color: #fff;
+}
+.body_bonus .footer_bonus .bouton_bonus {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+  color: #156EEA;
+  border: none;
+  background-color: #E7F1FD;
+  padding: 0.5rem;
+  width: 15rem;
+}
+.body_bonus .footer_bonus .bouton_bonus a {
+  text-decoration: none;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors

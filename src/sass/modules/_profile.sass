@@ -6,7 +6,9 @@
             background-color: #E7F1FD
             border: none
             color: $blue
-            font-size: .7em
+            font-size: .6em
+            height: 1.5rem
+            width: 4rem
         h4
             color: $txtblack
             font-weight: 600
@@ -17,8 +19,11 @@
     .profile-card
         padding-left: 7%
         padding-right: 7%
-        div
+        .card
             box-shadow: 0 4px 8px rgba(143, 205, 219, 0.1) // crée un border shadow plus claire
+            transition: transform 0.3s ease, filter 0.3s ease
+            &:hover
+                filter: none
             .card-body
                 height: 6em
                 h5
@@ -27,6 +32,9 @@
                 p
                     font-size: .7em
                     color: #C0C0C0
+        &:hover .card:not(:hover)
+            transform: scale(0.9)
+            filter: blur(3px)
 
 @media (max-width: 425px) 
     .profile
