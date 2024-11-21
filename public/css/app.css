@@ -28,7 +28,7 @@ header .filter div a {
     height: 25rem;
   }
   header .filter {
-    height: 25rem;
+    height: 25rem 25rem;
   }
   header .filter div a {
     width: 15%;
@@ -151,7 +151,6 @@ nav #navbar li a {
 .s2 div .carousel-inner .carousel-caption p {
   font-size: 0.62em;
 }
-
 @media (max-width: 425px) {
   .s2 div .carousel-inner .carousel-caption {
     bottom: 4em;
@@ -215,44 +214,6 @@ nav #navbar li a {
     width: calc(100% - 1rem);
   }
 }
-.profile {
-  background-color: #F6F9FE;
-}
-.profile div a {
-  background-color: #E7F1FD;
-  border: none;
-  color: #156EEA;
-  font-size: 0.7em;
-}
-.profile div h4, .profile div .h4 {
-  color: #222222;
-  font-weight: 600;
-}
-.profile div h4 span, .profile div .h4 span {
-  color: #156EEA;
-}
-.profile div p {
-  font-size: 0.8em;
-}
-.profile .profile-card {
-  padding-left: 7%;
-  padding-right: 7%;
-}
-.profile .profile-card div {
-  box-shadow: 0 4px 8px rgba(143, 205, 219, 0.1);
-}
-.profile .profile-card div .card-body {
-  height: 6em;
-}
-.profile .profile-card div .card-body h5, .profile .profile-card div .card-body .h5 {
-  font-size: 0.8em;
-  color: #222222;
-}
-.profile .profile-card div .card-body p {
-  font-size: 0.7em;
-  color: #C0C0C0;
-}
-
 @media (max-width: 425px) {
   .profile div p {
     font-size: 0.5em;
@@ -262,75 +223,6 @@ nav #navbar li a {
     align-items: center;
   }
 }
-.contact div a {
-  background-color: #E7F1FD;
-  border: none;
-  color: #156EEA;
-  font-size: 0.7em;
-}
-.contact div h4, .contact div .h4 {
-  color: #222222;
-  font-weight: 600;
-}
-.contact div h4 span, .contact div .h4 span {
-  color: #156EEA;
-}
-.contact div p {
-  font-size: 0.8em;
-}
-.contact .contact_case {
-  padding-right: 3em;
-  width: 63%;
-  gap: 1em;
-  align-items: center;
-}
-.contact .contact_case .box {
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-.contact .contact_case .box .logo {
-  border: 2px #B3D1FA dotted;
-  border-radius: 100%;
-  width: 3em;
-  height: 3em;
-}
-.contact .contact_case .box .logo img {
-  height: 1.5em;
-}
-.contact .contact_case .box h5, .contact .contact_case .box .h5 {
-  color: #757575;
-}
-.contact .contact_case .box p {
-  color: #757575;
-  font-size: 0.7em;
-}
-.contact .contact_box {
-  width: 63%;
-  gap: 0.4em;
-  align-items: center;
-  padding-right: 1.3em;
-  padding-top: 1em;
-}
-.contact .contact_box .box-formulaire {
-  padding: 1em;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  height: 18em;
-}
-.contact .contact_box .box-formulaire input {
-  font-size: 0.7em;
-  color: #A0A7AC;
-}
-.contact .contact_box .box-formulaire textarea {
-  width: 100%;
-  height: 7rem;
-  font-size: 0.7em;
-  color: #A0A7AC;
-}
-.contact .contact_box .box-formulaire button {
-  font-size: 0.8em;
-  height: 2.5rem;
-  width: 40%;
-}
-
 @media (max-width: 1024px) {
   .contact div iframe {
     width: 290.13px;
@@ -364,7 +256,6 @@ nav #navbar li a {
     font-size: 1em;
   }
   .contact .contact_case .box p {
-    color: #757575;
     font-size: 0.5em;
   }
   .contact div iframe {
@@ -6477,11 +6368,11 @@ textarea.form-control-lg {
 }
 
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")*/;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") /*rtl:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")*/;
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")*/;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") /*rtl:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")*/;
 }
 
 .carousel-indicators {

@@ -1,28 +1,29 @@
 .s2
     div
         .carousel-inner
-            height: 23.5em
+            height: 23.5em // donner la hauteur voulu pour la carousel
             .carousel-item
-                filter: brightness(.3)
+                filter: brightness(.3) // filtre sur la carousel qui lui donne un ton plus sombre
                 #image
-                    width: 67%
-                    transform: translateY(-10%)
+                    width: 67% //donne une longeure à l'image N°1 pour qu'elle prenne une longeure spécifique pour que la deuxième  image se place dans l'espace restant
+                    transform: translateY(-10%) // la centrer sur l'axe Y pour qu'elle soit dans la position de mon choix
                 #image2
-                    transform: translateY(-10%)
+                    transform: translateY(-10%)// la centrer sur l'axe Y pour qu'elle soit dans la position de mon choix
             .carousel-caption
-                bottom: 6em
+                bottom: 6em // centrer le texte au milieu de la carousel avec des position car la carousel est en relative 
                 h4
                     color: $blue
                     padding-bottom: .8em
                 p
                     font-size: .62em
+        button
         
 @media (max-width: 425px) 
     .s2
         div
             .carousel-inner
                 .carousel-caption
-                    bottom: 4em   
+                    bottom: 4em   // miodifier la position du texte
 
 @media (max-width: 375px) 
     .s2

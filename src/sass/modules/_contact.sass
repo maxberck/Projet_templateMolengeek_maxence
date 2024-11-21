@@ -1,8 +1,9 @@
 .contact
+// la même chose  que dans _featured.sass 
     div
         a
             background-color: #E7F1FD
-            border: none
+            border: none 
             color: $blue
             font-size: .7em
         h4
@@ -15,12 +16,12 @@
     .contact_case
         padding-right: 3em
         width: 63%
-        gap: 1em
+        gap: 1em // dire que je veux un gap entre les block
         align-items: center
         .box
             box-shadow: $card-box-shadow
             .logo
-                border: 2px #B3D1FA dotted
+                border: 2px #B3D1FA dotted // le dotted fait que le border est en pointillé 
                 border-radius: 100%
                 width: 3em
                 height: 3em  
@@ -33,7 +34,7 @@
                 font-size: .7em
     .contact_box
         width: 63%
-        gap: .4em
+        gap: .4em 
         align-items: center
         padding-right: 1.3em
         padding-top: 1em
@@ -58,17 +59,17 @@
     .contact
         div
             iframe
-                width: 290.13px
+                width: 290.13px // je modifie la largeur de la maps car elle a des valeur absolue
         .contact_box
             .box-formulaire
                 button
-                    width: 50%
+                    width: 50% // la taille du bouton pour que le texte reste sur la même ligne
 
 @media (max-width: 768px) 
     .contact
         .contact_case
             .box
-                height: 129.61px
+                height: 129.61px // je donne une hauteur car les boxs n'avait plus la même hauteur
         div
             iframe
                 width: 211.91px
@@ -83,19 +84,18 @@
             p
                 font-size: .5em
         .contact_case
-            width: 80%
+            width: 80% // agrandir l'espace utilisé par rapport a la taille de l'écran
             .box
                 height: 129.61px
                 h5
-                    font-size: 1em
+                    font-size: 1em // modifie la font-size pour fit dans l'espace disponible
                 p
-                    color: #757575   
                     font-size: .5em
         div
             iframe
                 width: 140px
         .contact_box
-            width: 80%
+            width: 80% // agrandir l'espace utilisé par rapport a la taille de l'écran
             .box-formulaire
                 padding: .5em
                 textarea
