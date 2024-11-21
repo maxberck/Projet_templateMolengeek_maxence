@@ -4,7 +4,8 @@
             background-color: #E7F1FD
             border: none 
             color: $blue
-            font-size: .7em
+            font-size: .6em
+            width: 5rem
         h4
             color: $txtblack
             font-weight: 600
@@ -49,10 +50,13 @@
                 height: 7rem
                 font-size: .7em
                 color: #A0A7AC
-            button
+            .lien_bonus 
                 font-size: .8em
                 height: 2.5rem
                 width: 40%
+                background-color: $blue
+                color: #fff
+                padding-top: .6rem
 
 @media (max-width: 1024px) 
     .contact
@@ -61,7 +65,7 @@
                 width: 290.13px // je modifie la largeur de la maps car elle a des valeur absolue
         .contact_box
             .box-formulaire
-                button
+                .lien_bonus
                     width: 50% // la taille du bouton pour que le texte reste sur la même ligne
 
 @media (max-width: 768px) 
@@ -74,7 +78,7 @@
                 width: 211.91px
         .contact_box
             .box-formulaire
-                button
+                .lien_bonus
                     width: 70%
 
 @media (max-width: 425px) 
@@ -99,7 +103,7 @@
                 padding: .5em
                 textarea
                     height: 5em
-                button
+                .lien_bonus
                     width: 90%
 
 @media (max-width: 375px) 
@@ -115,6 +119,7 @@
         .contact_box
             width: 90%
             .box-formulaire
-                button
+                .lien_bonus
                     width: 90%
-                    font-size: .6em
+                    font-size: .7rem
+                    padding-top: .7rem
