@@ -117,9 +117,16 @@ nav #navbar li a {
 @media (max-width: 768px) {
   .featured .s1-card {
     justify-content: center;
+    width: 33%;
   }
-  .featured .s1-card .card-1 {
-    align-items: flex-end;
+  .featured .s1-card .card-body #img-card {
+    height: 23%;
+  }
+}
+@media (max-width: 768px) {
+  .featured .s1-card {
+    justify-content: center;
+    width: 66%;
   }
 }
 .s2 div .carousel-inner {

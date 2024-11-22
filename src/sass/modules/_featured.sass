@@ -15,8 +15,10 @@
         div
             div
                 box-shadow: $card-box-shadow // mettre un box-shadow avec une variable pré définie
+
                 img
                     width: 19%
+
                 #img-card
                     height: 19% // une des svg était plus grande que les autres. donc j'ai fait un id pour la modifier séparément
                 p
@@ -25,8 +27,19 @@
 @media (max-width: 768px) 
     .featured
         .s1-card
-            justify-content: center
-            .card-1
-                align-items: flex-end
+            justify-content: center 
+            width: 33%
+            .card-body
+                #img-card
+                    height: 23%
+
+@media (max-width: 768px) 
+    .featured
+        .s1-card
+            justify-content: center 
+            width: 66%
+            .card-body
+                #img-card                
+ 
                
 
