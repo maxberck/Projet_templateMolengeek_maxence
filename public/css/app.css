@@ -95,9 +95,20 @@ nav #navbarTogglerDemo02 ul li a {
     padding-left: 9.2rem;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+  nav h3, nav .h3 {
+    padding-left: 7.2rem;
+  }
+}
+@media (max-width: 425px) {
   nav h3, nav .h3 {
     padding-left: 0rem;
+  }
+}
+@media (max-width: 375px) {
+  .navbar {
+    display: flex;
+    gap: 0rem;
   }
 }
 .featured div a {
@@ -260,7 +271,8 @@ nav #navbarTogglerDemo02 ul li a {
   width: 63%;
 }
 .profile .profile-card .card {
-  box-shadow: 0 4px 8px rgba(143, 205, 219, 0.1);
+  border: none;
+  box-shadow: 0 4px 8px rgba(144, 177, 222, 0.226);
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 .profile .profile-card .card:hover {
