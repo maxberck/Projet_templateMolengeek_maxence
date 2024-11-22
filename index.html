@@ -7,29 +7,35 @@
     <link rel="stylesheet" href="./public/css/app.css">
 </head>
 <body>
-    <nav class="d-flex container-fluid pt-3 pb-3">
-        <h3>MolenGeek<span>.</span></h3>
-        <ul class="nav " id="navbar">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Featured</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ">Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link ">Team</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link">Contact</a>
-            </li>
-          </ul>
+    <nav class="container pt-3 pb-3 navbar navbar-expand-lg justify-content-center">
+        <h3 class="navbar-brand">MolenGeek<span>.</span></h3>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mb-2 align-items-end justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Featured</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div> 
     </nav>
+    
     <!-- header -->
      <!-- donner une largeur de 100% au header -->
     <header class="w-100"> 
@@ -227,7 +233,7 @@
             <p class="container w-75">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
         </div>
         <!-- case 1ere ligne -->
-        <div class="contact_case container d-flex justify-content-around">
+        <div class="contact_case container d-flex justify-content-around ">
             <!-- col permet de donné un width par rapport à 12 qui est 100% ici 50% -->
             <div class="col-12 col-sm-6 text-center box d-flex align-items-center flex-column ">
                 <div class="logo d-flex align-items-center justify-content-center pt-2">
@@ -236,7 +242,7 @@
                 <h5>Our Adress</h5>
                 <p>Rue Georges De Lombaerde 92, 1140 Evere</p>
             </div>
-            <div class="col-12 col-sm-6 d-flex gap-3">
+            <div class="col-12 col-sm-6 d-flex gap-1 gap-sm-3 perso">
                 <div class="col-6 text-center box d-flex align-items-center flex-column pt-2">
                     <div class="logo d-flex align-items-center justify-content-center">
                         <img src="./public/img/envelope-regular.svg" alt="">
@@ -256,7 +262,7 @@
         <!-- deuxième ligne -->
         <div class="contact_box container d-flex justify-content-center">
             <div class="col-12 col-sm-6 box">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5037.387110351745!2d4.3386397121929825!3d50.85535875800903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38c275028d3%3A0xc7799151146ebf77!2sMolenGeek!5e0!3m2!1sfr!2sbe!4v1732112167625!5m2!1sfr!2sbe" width="423.59" height="288" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5037.387110351745!2d4.3386397121929825!3d50.85535875800903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38c275028d3%3A0xc7799151146ebf77!2sMolenGeek!5e0!3m2!1sfr!2sbe!4v1732112167625!5m2!1sfr!2sbe" width="423.59" height="292" style="border:0; margin-top: 1rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col-12 col-sm-6 box-formulaire">
                 <form class="row g-3">

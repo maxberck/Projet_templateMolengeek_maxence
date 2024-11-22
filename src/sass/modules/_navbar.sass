@@ -1,13 +1,28 @@
 nav
-    align-items: center
-    justify-content: space-evenly 
-    background-color: #fff
+    gap: 25rem
     h3 
+        padding-left: 14rem
         color: $txtblack // variable donné dans pour le texte
         span
             color: $blue // variable donné dans pour le fond et la couleur de texte qui revient
-    #navbar
-        font-size: .75em
-        li
-            a
-                color: $txtblack // variable donné dans pour le texte
+    #navbarTogglerDemo02
+        ul
+            display: flex
+            justify-content: center
+            align-items: center
+
+            font-size: .75em
+            li
+                a
+                    color: $txtblack // variable donné dans pour le texte
+
+@media ( max-width: 1024px)
+    nav
+        gap: 15rem
+        h3
+            padding-left: 9.2rem
+
+@media ( max-width: 1024px)
+    nav
+        h3
+            padding-left: 0rem

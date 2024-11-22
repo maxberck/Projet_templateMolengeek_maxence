@@ -58,7 +58,7 @@ header .filter div a {
 }
 @media (max-width: 375px) {
   header {
-    height: 10rem;
+    height: 9rem;
   }
   header .filter {
     height: 9rem;
@@ -68,23 +68,38 @@ header .filter div a {
   }
 }
 nav {
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: #fff;
+  gap: 25rem;
 }
 nav h3, nav .h3 {
+  padding-left: 14rem;
   color: #222222;
 }
 nav h3 span, nav .h3 span {
   color: #156EEA;
 }
-nav #navbar {
+nav #navbarTogglerDemo02 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 0.75em;
 }
-nav #navbar li a {
+nav #navbarTogglerDemo02 ul li a {
   color: #222222;
 }
 
+@media (max-width: 1024px) {
+  nav {
+    gap: 15rem;
+  }
+  nav h3, nav .h3 {
+    padding-left: 9.2rem;
+  }
+}
+@media (max-width: 1024px) {
+  nav h3, nav .h3 {
+    padding-left: 0rem;
+  }
+}
 .featured div a {
   background-color: #E7F1FD;
   border: none;
@@ -114,6 +129,12 @@ nav #navbar li a {
   font-size: 0.7em;
 }
 
+@media (max-width: 1024px) {
+  .featured .s1-card {
+    justify-content: center;
+    width: 63%;
+  }
+}
 @media (max-width: 768px) {
   .featured .s1-card {
     justify-content: center;
@@ -123,7 +144,7 @@ nav #navbar li a {
     height: 23%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 425px) {
   .featured .s1-card {
     justify-content: center;
     width: 66%;
@@ -364,9 +385,13 @@ nav #navbar li a {
     font-size: 0.5em;
   }
   .contact .contact_case {
+    padding-right: 1.5rem;
     flex-wrap: wrap;
     align-items: center;
     width: 80%;
+  }
+  .contact .contact_case div .box {
+    width: 320.2;
   }
   .contact .contact_case div .box h5, .contact .contact_case div .box .h5 {
     font-size: 1em;
@@ -436,6 +461,7 @@ footer .container p span {
   font-size: 5rem;
   font-weight: 900;
   padding: 3rem;
+  text-align: center;
   background-image: url("../img/hero-bg.jpg");
   background-size: cover;
   background-position: center;
