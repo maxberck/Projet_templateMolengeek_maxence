@@ -51,30 +51,34 @@
             <h4 class="card-title">Read <span>Featured Services</span></h4>
         </div>
         <!-- création de la classe s1-card pour la travaillé dans sass -->
-        <div class="container w-75 d-flex s1-card pt-4 gap-3">
-            <!-- Card 1 -->
-            <div class="card-body p-4 ">
-                <img src="./public/img/basketball-solid.svg" alt="">
-                <h5 class="card-title pt-3 pb-3 fs-6 fw-bold">Lorem Ipsum</h5>
-                <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et qua molestias excepturi.</p>
+        <div class="container d-flex flex-column flex-sm-row s1-card pt-4 gap-3 ">
+            <div class="d-flex flex-column flex-lg-row col-12 col-lg-6 gap-3 card-1">
+                <!-- Card 1 -->
+                <div class="card-body p-4 col-12 col-lg-6">
+                    <img src="./public/img/basketball-solid.svg" alt="">
+                    <h5 class="card-title pt-3 pb-3 fs-6 fw-bold">Lorem Ipsum</h5>
+                    <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et qua molestias excepturi.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="card-body p-4 col-12 col-lg-6 ">
+                    <img src="./public/img/file-lines-regular.svg" id="img-card" alt="">
+                    <h5 class="card-title pt-3 pb-3 fs-6 fw-bold">Lorem Ipsum</h5>
+                    <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+                </div>
             </div>
-            <!-- Card 2 -->
-            <div class="card-body p-4">
-                <img src="./public/img/file-lines-regular.svg" id="img-card" alt="">
-                <h5 class="card-title pt-3 pb-3 fs-6 fw-bold">Lorem Ipsum</h5>
-                <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
-            </div>
-            <!-- Card 3 -->
-            <div class="card-body p-4 ">
-                <img src="./public/img/gauge-simple-high-solid.svg" alt="">
-                <h5 class="card-title pt-3 pb-3 fs-6 fw-bold">Lorem Ipsum</h5>
-                <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
-            </div>
-            <!-- Card 4 -->
-            <div class="card-body p-4">
-                <img src="./public/img/earth-americas-solid.svg" alt="">
-                <h5 class="card-title pt-3 pb-3 fs-6 fw-bold">Lorem Ipsum</h5>
-                <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+            <div class="d-flex flex-column flex-lg-row col-12 col-lg-6 gap-3 card-2">
+                <!-- Card 3 -->
+                <div class="card-body p-4 col-12 col-lg-6 ">
+                    <img src="./public/img/gauge-simple-high-solid.svg" alt="">
+                    <h5 class="card-title pt-3 pb-3 fs-6 fw-bold">Lorem Ipsum</h5>
+                    <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="card-body p-4 col-12 col-lg-6">
+                    <img src="./public/img/earth-americas-solid.svg" alt="">
+                    <h5 class="card-title pt-3 pb-3 fs-6 fw-bold">Lorem Ipsum</h5>
+                    <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -109,13 +113,13 @@
     </section>
     <!-- service -->
     <section class="services pb-5">
-        <div class="container w-50 text-center">
+        <div class="container w-75 w-sm-50  text-center">
             <a href="#" class="btn btn-primary rounded-5 mb-3"><strong> SERVICES</strong></a>
             <h4 class="card-title mb-2">Check our<span> Services</span></h4>
             <p class="container w-75">LUt possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
         </div>
         <!-- alert -->
-        <div class="services-card container w-75 d-flex flex-wrap justify-content-between pt-2 gap-3 ">
+        <div class="services-card container d-flex flex-wrap justify-content-between pt-2 gap-3 ">
             <!-- service 1 -->
             <div class="card-body text-center p-4 d-flex flex-column align-items-center pt-5">
                 <!-- div pour encadrer le svg -->
@@ -174,12 +178,12 @@
     <!-- profile -->
     <section class="profile">
         <!-- container avec une width de 50 -->
-        <div class="container w-50 text-center pt-5 pb-2">
+        <div class="container w-75 w-sm-50  text-center pt-5 pb-2">
             <a href="#" class="btn btn-primary rounded-5 mb-2"><strong>TEAM</strong></a>
             <h4 class="card-title mb-3">Our Hardworking<span> Team</span></h4>
             <p class="container w-75">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
         </div>
-        <div class="container w-75 d-flex gap-3 profile-card pb-5">
+        <div class="container d-flex gap-3 profile-card pb-5">
             <!-- ptofile 1 -->
              <!-- dans style ca va donner une taille précise à la carte -->
             <div class="card" style="width: 13rem;">
@@ -217,7 +221,7 @@
     </section>
     <!-- contact -->
     <section class="contact pb-5">
-        <div class="container w-50 text-center pt-5 pb-3">
+        <div class="container w-75 w-sm-50 text-center pt-5 pb-3">
             <a href="#" class="btn btn-primary rounded-5 mb-2"><strong>CONTACT</strong></a>
             <h4 class="card-title pb-3"><span> Contact Us</span></h4>
             <p class="container w-75">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
@@ -225,34 +229,36 @@
         <!-- case 1ere ligne -->
         <div class="contact_case container d-flex justify-content-around">
             <!-- col permet de donné un width par rapport à 12 qui est 100% ici 50% -->
-            <div class="col-6 text-center box d-flex align-items-center flex-column">
-                <div class="logo d-flex align-items-center justify-content-center">
+            <div class="col-12 col-sm-6 text-center box d-flex align-items-center flex-column ">
+                <div class="logo d-flex align-items-center justify-content-center pt-2">
                     <img src="./public/img/location-dot-solid.svg" alt="">
                 </div>
                 <h5>Our Adress</h5>
                 <p>Rue Georges De Lombaerde 92, 1140 Evere</p>
             </div>
-            <div class="col-3 text-center box d-flex align-items-center flex-column">
-                <div class="logo d-flex align-items-center justify-content-center">
-                    <img src="./public/img/envelope-regular.svg" alt="">
+            <div class="col-12 col-sm-6 d-flex gap-3">
+                <div class="col-6 text-center box d-flex align-items-center flex-column pt-2">
+                    <div class="logo d-flex align-items-center justify-content-center">
+                        <img src="./public/img/envelope-regular.svg" alt="">
+                    </div>
+                    <h5>Email Us</h5>
+                    <p>maxence@ipn.be</p>
                 </div>
-                <h5>Email Us</h5>
-                <p>maxence@ipn.be</p>
-            </div>
-            <div class="col-3 text-center box d-flex align-items-center flex-column">
-                <div class="logo d-flex align-items-center justify-content-center">
-                    <img src="./public/img/phone-volume-solid.svg" alt="">
+                <div class="col-6 text-center box d-flex align-items-center flex-column pt-2">
+                    <div class="logo d-flex align-items-center justify-content-center">
+                        <img src="./public/img/phone-volume-solid.svg" alt="">
+                    </div>
+                    <h5>Call Us</h5>
+                    <p>+32 476096872</p>
                 </div>
-                <h5>Call Us</h5>
-                <p>+32 476096872</p>
             </div>
         </div>
         <!-- deuxième ligne -->
         <div class="contact_box container d-flex justify-content-center">
-            <div class="col-6 box">
+            <div class="col-12 col-sm-6 box">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5037.387110351745!2d4.3386397121929825!3d50.85535875800903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38c275028d3%3A0xc7799151146ebf77!2sMolenGeek!5e0!3m2!1sfr!2sbe!4v1732112167625!5m2!1sfr!2sbe" width="423.59" height="288" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="col-6 box-formulaire">
+            <div class="col-12 col-sm-6 box-formulaire">
                 <form class="row g-3">
                     <div class="col-md-6">
                       <input type="email" class="form-control rounded-0" id="inputEmail4" placeholder="Your Name">
